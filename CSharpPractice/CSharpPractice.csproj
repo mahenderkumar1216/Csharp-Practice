@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>CSharpPractice.Generics.GenericsIntro</StartupObject>
+    <StartupObject>CSharpPractice._65Indexers</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -52,6 +52,7 @@
     <Compile Include="47ENUMcs.cs" />
     <Compile Include="55LateBindingReflection.cs" />
     <Compile Include="56Generics.cs" />
+    <Compile Include="65Indexers.cs" />
     <Compile Include="AbstractClass.cs" />
     <Compile Include="ClassesExample.cs" />
     <Compile Include="DifferenceOverridingHiding.cs" />
