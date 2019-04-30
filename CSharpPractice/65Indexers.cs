@@ -18,7 +18,7 @@ namespace CSharpPractice
                 Console.WriteLine("Employee With ID=" + id + " Not found");
             else
                 Console.WriteLine("Employee ID=" + id + " Employee Name=" + name);
-            Console.WriteLine("Employee Male Count="+c["Male"]);
+            Console.WriteLine("Employee Male Count=" + c["Male"]);
             Console.WriteLine("Employee Female Count=" + c["Female"]);
             Console.ReadLine();
         }
@@ -44,6 +44,7 @@ namespace CSharpPractice
             listEmployees.Add(new EmpIndexers() { Id = 5, Name = "Kathy", Gender = "Female" });
             listEmployees.Add(new EmpIndexers() { Id = 6, Name = "Karen", Gender = "Female" });
             listEmployees.Add(new EmpIndexers() { Id = 7, Name = "Alex", Gender = "Male" });
+            
         }
 
         public string this[int Id]
@@ -57,11 +58,11 @@ namespace CSharpPractice
                     return string.Empty;
             }
         }
-        public int this[string  Gender]
+        public int this[string Gender]
         {
             get
             {
-               return listEmployees.Count(x => x.Gender == Gender);               
+                return listEmployees.Count(x => x.Gender == Gender);
             }
         }
     }

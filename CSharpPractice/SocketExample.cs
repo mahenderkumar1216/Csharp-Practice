@@ -19,7 +19,7 @@ namespace CSharpPractice
             //clientSocket.Connect(IPAddress.Parse("160.79.83.100"), 22);
             Console.WriteLine("Client Socket Program - Server Connected ...");
            
-
+           
 
             //byte[] bytes = new byte[1024];
             ////IPHostEntry host = Dns.GetHostEntry("160.43.94.168");

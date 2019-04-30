@@ -32,9 +32,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>CSharpPractice._65Indexers</StartupObject>
+    <StartupObject>CSharpPractice._78SortingComplexTypeLists</StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="QuickFix">
+      <HintPath>..\..\..\..\Downloads\quickfixn-v1.7.0\bin\QuickFix.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -53,8 +56,12 @@
     <Compile Include="55LateBindingReflection.cs" />
     <Compile Include="56Generics.cs" />
     <Compile Include="65Indexers.cs" />
+    <Compile Include="78SortingComplexTypeLists.cs" />
+    <Compile Include="79SortingComplexTypes.cs" />
     <Compile Include="AbstractClass.cs" />
+    <Compile Include="Class1.cs" />
     <Compile Include="ClassesExample.cs" />
+    <Compile Include="Customer2.cs" />
     <Compile Include="DifferenceOverridingHiding.cs" />
     <Compile Include="GenericInterface.cs" />
     <Compile Include="Generics\GenericsIntro.cs" />
@@ -66,10 +73,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SocketExample.cs" />
     <Compile Include="StaticClass.cs" />
-    <Compile Include="TLSClient.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

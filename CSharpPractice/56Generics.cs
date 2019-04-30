@@ -11,7 +11,7 @@ namespace CSharpPractice
         public static void Main()
         {
             bool isEqual = Calculator.AreEqual<string>("a", "a");
-            if (isEqual)                      
+            if (isEqual)
                 Console.WriteLine("Equal");
             else
                 Console.WriteLine("Not Equal");

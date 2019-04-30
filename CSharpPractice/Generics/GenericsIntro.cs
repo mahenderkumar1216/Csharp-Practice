@@ -66,7 +66,7 @@ namespace CSharpPractice.Generics
         public IEnumerator<int> GetEnumerator()
         {
             Node current = head;
-            while(current!=null)
+            while (current != null)
             {
                 yield return current.Data;
                 current = current.Next;
