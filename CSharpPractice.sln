@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2046
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpPractice", "CSharpPractice\CSharpPractice.csproj", "{A574604A-D51B-4FE5-A612-730FE4A4355E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreationalPatterns", "CreationalPatterns\CreationalPatterns.csproj", "{2EFE63FA-11E8-49BF-A4CB-09F1AA091902}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A574604A-D51B-4FE5-A612-730FE4A4355E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A574604A-D51B-4FE5-A612-730FE4A4355E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A574604A-D51B-4FE5-A612-730FE4A4355E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EFE63FA-11E8-49BF-A4CB-09F1AA091902}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EFE63FA-11E8-49BF-A4CB-09F1AA091902}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EFE63FA-11E8-49BF-A4CB-09F1AA091902}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EFE63FA-11E8-49BF-A4CB-09F1AA091902}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

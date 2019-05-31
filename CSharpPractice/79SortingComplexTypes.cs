@@ -27,6 +27,20 @@ namespace CSharpPractice
             //Method2
             Customer2.listCustomer.Sort((delegate (Customer2 x, Customer2 y) { return x.Name.CompareTo(y.Name); }));
 
+            foreach (var v in Customer2.listCustomer)
+            {
+                Console.WriteLine("ID=" + v.ID + ", Name=" + v.Name + ", Salary=" + v.Salary);
+            }
+            Console.WriteLine("--------------------------------------------------------------------");
+
+            //Method3
+            Customer2.listCustomer.Sort((x,y)=>x.Salary.CompareTo(y.Salary));
+            foreach (var v in Customer2.listCustomer)
+            {
+                Console.WriteLine("ID=" + v.ID + ", Name=" + v.Name + ", Salary=" + v.Salary);
+            }
+            Console.WriteLine("--------------------------------------------------------------------");
+
         }
         static int ComapreCustomer(Customer2 x, Customer2 y)
         {

@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>CSharpPractice._78SortingComplexTypeLists</StartupObject>
+    <StartupObject>CSharpPractice._88Threading</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="QuickFix">
@@ -58,6 +58,8 @@
     <Compile Include="65Indexers.cs" />
     <Compile Include="78SortingComplexTypeLists.cs" />
     <Compile Include="79SortingComplexTypes.cs" />
+    <Compile Include="88Threading.cs" />
+    <Compile Include="90PassingDataTo Thread.cs" />
     <Compile Include="AbstractClass.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="ClassesExample.cs" />
