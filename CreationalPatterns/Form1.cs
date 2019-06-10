@@ -39,6 +39,16 @@ namespace CreationalPatterns
 
             reader.Close();
             command.Connection.Close();
+        }        
+
+        private void radUseOleDb_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radUseSqlServer_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

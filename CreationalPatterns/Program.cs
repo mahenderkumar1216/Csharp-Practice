@@ -16,7 +16,7 @@ namespace CreationalPatterns
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new BuilderPattern.BuilderPatternForm());
+            Application.Run(new SingletonPattern.ExceptionHandlerForm1());
         }
     }
 }

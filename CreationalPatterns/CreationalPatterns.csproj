@@ -59,6 +59,12 @@
     <Compile Include="BuilderPattern\SqlServerDatabaseBuilder.cs" />
     <Compile Include="FactoryPattern\DatabaseFactory.cs" />
     <Compile Include="FactoryPattern\DatabaseType.cs" />
+    <Compile Include="FactoryPattern\FactoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FactoryPattern\FactoryForm.Designer.cs">
+      <DependentUpon>FactoryForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="FactoryPattern\IDataBase.cs" />
     <Compile Include="FactoryPattern\OleDbDatabase.cs" />
     <Compile Include="FactoryPattern\SqlServerDatabase.cs" />
@@ -71,9 +77,34 @@
     <Compile Include="OledbClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProtoTypePattern\Address.cs" />
+    <Compile Include="ProtoTypePattern\Admin.cs" />
+    <Compile Include="ProtoTypePattern\ProtoTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProtoTypePattern\ProtoTypeForm.Designer.cs">
+      <DependentUpon>ProtoTypeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProtoTypePattern\User.cs" />
+    <Compile Include="SingletonPattern\ExceptionHandler.cs" />
+    <Compile Include="SingletonPattern\ExceptionHandlerForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SingletonPattern\ExceptionHandlerForm1.Designer.cs">
+      <DependentUpon>ExceptionHandlerForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SingletonPattern\ExceptionHandlerForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SingletonPattern\ExceptionHandlerForm2.Designer.cs">
+      <DependentUpon>ExceptionHandlerForm2.cs</DependentUpon>
+    </Compile>
     <Compile Include="SqlServerClass.cs" />
     <EmbeddedResource Include="BuilderPattern\BuilderPatternForm.resx">
       <DependentUpon>BuilderPatternForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FactoryPattern\FactoryForm.resx">
+      <DependentUpon>FactoryForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -87,6 +118,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ProtoTypePattern\ProtoTypeForm.resx">
+      <DependentUpon>ProtoTypeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SingletonPattern\ExceptionHandlerForm1.resx">
+      <DependentUpon>ExceptionHandlerForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SingletonPattern\ExceptionHandlerForm2.resx">
+      <DependentUpon>ExceptionHandlerForm2.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -100,6 +140,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="StructuralPattern\AdapterPattern\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
