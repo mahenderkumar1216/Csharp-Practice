@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace CSharpPractice
 {
+
+   
     class _90PassingDataTo_Thread
     {
-
+        
     }
 }

@@ -36,6 +36,16 @@ namespace CSharpPractice
             Thread t3 = new Thread(new ThreadStart(PrintNumber));
             t3.Start();
 
+            //Part91 Retieving Data From Thread
+            Console.WriteLine("Please enter the Target Number");
+            int target91 = Convert.ToInt32(Console.ReadLine());
+
+            SumOfNumbersCallBack sumOfNumbersCall = new SumOfNumbersCallBack(_91RetreivingDataFromThread.PrintSum);
+            _91RetreivingDataFromThread _91RetreivingdataFromthread = new _91RetreivingDataFromThread(target91, sumOfNumbersCall);
+            Thread t4 = new Thread(new ThreadStart(_91RetreivingdataFromthread.PrintSumOfNumbers));
+            t4.Start();
+
+            Console.ReadLine();
         }
 
         static void PrintNumbers()

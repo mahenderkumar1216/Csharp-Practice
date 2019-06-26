@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A574604A-D51B-4FE5-A612-730FE4A4355E}</ProjectGuid>
+    <ProjectGuid>{DF0F54F6-3514-46E7-8063-DE43CE105E4C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>CSharpPractice</RootNamespace>
-    <AssemblyName>CSharpPractice</AssemblyName>
+    <RootNamespace>DataStructures</RootNamespace>
+    <AssemblyName>DataStructures</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -32,12 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>CSharpPractice._100FuncDelegate</StartupObject>
+    <StartupObject>DataStructures.LinkedList.NodeChain</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="QuickFix">
-      <HintPath>..\..\..\..\Downloads\quickfixn-v1.7.0\bin\QuickFix.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -48,49 +45,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="100FuncDelegate.cs" />
-    <Compile Include="35Delegate.cs" />
-    <Compile Include="35MutipleClassInterface.cs" />
-    <Compile Include="36DelegateExample.cs" />
-    <Compile Include="40ExceptionHandling.cs" />
-    <Compile Include="47ENUMcs.cs" />
-    <Compile Include="55LateBindingReflection.cs" />
-    <Compile Include="56Generics.cs" />
-    <Compile Include="65Indexers.cs" />
-    <Compile Include="78SortingComplexTypeLists.cs" />
-    <Compile Include="79SortingComplexTypes.cs" />
-    <Compile Include="88Threading.cs" />
-    <Compile Include="90PassingDataTo Thread.cs" />
-    <Compile Include="91RetreivingDataFromThread.cs" />
-    <Compile Include="92ThreadAliveJoin.cs" />
-    <Compile Include="93ProtectedSharing.cs" />
-    <Compile Include="95DeadLock.cs" />
-    <Compile Include="96AvoidingDeadlock.cs" />
-    <Compile Include="97PerformanceofMultithreaded.cs" />
-    <Compile Include="AbstractClass.cs" />
-    <Compile Include="Account.cs" />
-    <Compile Include="AccountManager.cs" />
-    <Compile Include="Class1.cs" />
-    <Compile Include="ClassesExample.cs" />
-    <Compile Include="Customer2.cs" />
-    <Compile Include="DifferenceOverridingHiding.cs" />
-    <Compile Include="GenericInterface.cs" />
-    <Compile Include="Generics\GenericsIntro.cs" />
-    <Compile Include="Inheritance.cs" />
-    <Compile Include="InterfaceExample.cs" />
-    <Compile Include="MethodHiding.cs" />
-    <Compile Include="MethodOverloading.cs" />
-    <Compile Include="Polymorphism.cs" />
+    <Compile Include="LinkedList\DoublyLinkedList.cs" />
+    <Compile Include="LinkedList\DoublyLinkedListNode.cs" />
+    <Compile Include="LinkedList\LinkedList.cs" />
+    <Compile Include="LinkedList\LinkedListNode.cs" />
+    <Compile Include="LinkedList\NodeChain.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SocketExample.cs" />
-    <Compile Include="StaticClass.cs" />
+    <Compile Include="Stack\PostfixCalculator.cs" />
+    <Compile Include="Stack\StackArray.cs" />
+    <Compile Include="Stack\StackUsingLinkedList.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Connected Services\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
