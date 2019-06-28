@@ -11,7 +11,7 @@ namespace DataStructures.Stack
         public static void Main(string[] args)
         {
             Stack<int> _stack = new Stack<int>();
-
+            Console.WriteLine(_stack.Count);
             foreach (string token in args)
             {
                 int value;
@@ -45,6 +45,8 @@ namespace DataStructures.Stack
                     }
                 }
             }
+            Console.WriteLine(_stack.Pop());
+            Console.ReadLine();
         }
 
     }
