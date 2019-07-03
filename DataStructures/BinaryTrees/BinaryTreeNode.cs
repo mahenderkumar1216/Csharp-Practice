@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataStructures.BinaryTrees
 {
-    class BinaryTreeNode<TNode> : IComparable<TNode> where TNode : IComparable<TNode>
+    public class BinaryTreeNode<TNode> : IComparable<TNode> where TNode : IComparable<TNode>
     {
         public BinaryTreeNode(TNode value)
         {

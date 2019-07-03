@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>DataStructures.Program</StartupObject>
+    <StartupObject>DataStructures.BinaryTrees.WordSorter</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="PresentationCore" />
@@ -55,6 +55,7 @@
   <ItemGroup>
     <Compile Include="BinaryTrees\BinaryTree.cs" />
     <Compile Include="BinaryTrees\BinaryTreeNode.cs" />
+    <Compile Include="BinaryTrees\WordSorter.cs" />
     <Compile Include="LinkedList\DoublyLinkedList.cs" />
     <Compile Include="LinkedList\DoublyLinkedListNode.cs" />
     <Compile Include="LinkedList\LinkedList.cs" />

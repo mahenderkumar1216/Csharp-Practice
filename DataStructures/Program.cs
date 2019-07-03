@@ -23,7 +23,9 @@ namespace DataStructures
 
             int a = 5;
             int b = 6;
-            Console.WriteLine(a.CompareTo(b).ToString());
+            Console.WriteLine(a.CompareTo(6).ToString());
+            Console.WriteLine(a.CompareTo(4).ToString());
+            Console.WriteLine(a.CompareTo(5).ToString());
         }
     }
 }
