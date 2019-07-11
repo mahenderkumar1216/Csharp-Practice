@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>DataStructures.BinaryTrees.WordSorter</StartupObject>
+    <StartupObject>DataStructures.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="PresentationCore" />
@@ -56,6 +56,20 @@
     <Compile Include="BinaryTrees\BinaryTree.cs" />
     <Compile Include="BinaryTrees\BinaryTreeNode.cs" />
     <Compile Include="BinaryTrees\WordSorter.cs" />
+    <Compile Include="HashTable\HashTable.cs" />
+    <Compile Include="HashTable\HashTableArray.cs" />
+    <Compile Include="HashTable\HashTableArrayNode.cs" />
+    <Compile Include="HashTable\HashTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HashTable\HashTableForm.Designer.cs">
+      <DependentUpon>HashTableForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HashTable\HashTableNodePair.cs" />
+    <Compile Include="HashTable\HashTableUserControl.xaml.cs">
+      <DependentUpon>HashTableUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HashTable\StringHashing.cs" />
     <Compile Include="LinkedList\DoublyLinkedList.cs" />
     <Compile Include="LinkedList\DoublyLinkedListNode.cs" />
     <Compile Include="LinkedList\LinkedList.cs" />
@@ -99,6 +113,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="HashTable\HashTableForm.resx">
+      <DependentUpon>HashTableForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Queue\PriorityQueueForm.resx">
       <DependentUpon>PriorityQueueForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -110,6 +127,10 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Page Include="HashTable\HashTableUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Queue\PriorityQueueUserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -119,6 +140,8 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="TextFile1.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

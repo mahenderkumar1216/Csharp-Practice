@@ -21,11 +21,13 @@ namespace DataStructures
             // Go to http://aka.ms/dotnet-get-started-console to continue learning how to build a console app! 
             // Stack.PostfixCalculator.Main(new string[] {"5","6","7","*","+","1","-" });
 
-            int a = 5;
-            int b = 6;
-            Console.WriteLine(a.CompareTo(6).ToString());
-            Console.WriteLine(a.CompareTo(4).ToString());
-            Console.WriteLine(a.CompareTo(5).ToString());
+            //int a = 5;
+            //int b = 6;
+            //Console.WriteLine(a.CompareTo(6).ToString());
+            //Console.WriteLine(a.CompareTo(4).ToString());
+            //Console.WriteLine(a.CompareTo(5).ToString());
+
+            Application.Run(new HashTable.HashTableForm());
         }
     }
 }
