@@ -27,7 +27,22 @@ namespace DataStructures
             //Console.WriteLine(a.CompareTo(4).ToString());
             //Console.WriteLine(a.CompareTo(5).ToString());
 
-            Application.Run(new HashTable.HashTableForm());
+            //Application.Run(new HashTable.HashTableForm());
+
+            Sorting.BubbleSort<int> b = new Sorting.BubbleSort<int>();
+            b.Sort(new int[] { 1, 3, 4, 7, 2, 9, 5, 6 });
+            b.PrintSorted();
+            Console.WriteLine();
+            Console.WriteLine("Number of Comparisions:" + b.Comparisons);
+            Console.WriteLine("Number of Swaps: " + b.Swaps);
+            Console.WriteLine();
+
+            Sorting.InsertionSort<int> insertionSort = new Sorting.InsertionSort<int>();
+            insertionSort.Sort(new int[] { 3, 2, 1 });
+            insertionSort.PrintSorted();
+            Console.WriteLine();
+            Console.WriteLine("Number of Comparisions:" + insertionSort.Comparisons);
+            Console.WriteLine("Number of Swaps: " + insertionSort.Swaps);
         }
     }
 }

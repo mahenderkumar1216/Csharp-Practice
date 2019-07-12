@@ -1,0 +1,76 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+
+namespace DataStructures.Sorting
+{
+    public interface IPerformanceTracker
+    {
+        long Comparisons
+        {
+            get;
+        }
+
+        long Swaps
+        {
+            get;
+        }
+
+        void Reset();
+    }
+
+    public class Tracker<T> : IPerformanceTracker where T : IComparable<T>
+    {
+
+        long _comparisons;
+        long _swaps;
+        public long Comparisons
+        {
+            get
+            {
+                return Interlocked.Read(ref _comparisons);
+            }
+        }
+
+        public long Swaps
+        {
+            get
+            {
+                return Interlocked.Read(ref _swaps);
+            }
+        }
+
+        public void Reset()
+        {
+            Interlocked.Exchange(ref _comparisons, 0);
+            Interlocked.Exchange(ref _swaps, 0);
+        }
+
+        protected int Comapare(T lhs, T rhs)
+        {
+            Interlocked.Increment(ref _comparisons);
+            return lhs.CompareTo(rhs);
+        }
+
+        protected void Swap(T[] items, int left, int right)
+        {
+            if (left != right)
+            {
+                Interlocked.Increment(ref _swaps);
+
+                T temp = items[left];
+                items[left] = items[right];
+                items[right] = temp;
+            }
+        }
+
+        protected void Assign(T[] items, int index, T value)
+        {
+            items[index] = value;
+            Interlocked.Increment(ref _swaps);
+        }
+    }
+}
