@@ -16,7 +16,7 @@ namespace DataStructures.Sorting
 
             while (sortedRangeEndIndex < items.Length)
             {
-                if (Comapare(items[sortedRangeEndIndex], items[sortedRangeEndIndex - 1]) < 0)
+                if (Compare(items[sortedRangeEndIndex], items[sortedRangeEndIndex - 1]) < 0)
                 {
                     int insertIndex = FindInsertionIndex(items, items[sortedRangeEndIndex]);
                     Insert(items, insertIndex, sortedRangeEndIndex);
@@ -29,7 +29,7 @@ namespace DataStructures.Sorting
         {
             for (int index = 0; index < items.Length; index++)
             {
-                if (Comapare(items[index], valueToInsert) > 0)
+                if (Compare(items[index], valueToInsert) > 0)
                 {
                     return index;
                 }

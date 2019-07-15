@@ -18,7 +18,7 @@ namespace DataStructures.Sorting
                 swapped = false;
                 for (int i = 1; i < items.Length; i++)
                 {
-                    if (Comapare(items[i - 1], items[i]) > 0)
+                    if (Compare(items[i - 1], items[i]) > 0)
                     {
                         Swap(items, i - 1, i);
                         swapped = true;

@@ -102,6 +102,9 @@
     <Compile Include="Sorting\InsertionSort.cs" />
     <Compile Include="Sorting\IPerformanceTracker.cs" />
     <Compile Include="Sorting\ISorter.cs" />
+    <Compile Include="Sorting\MergeSort.cs" />
+    <Compile Include="Sorting\QuickSort.cs" />
+    <Compile Include="Sorting\SelectionSort.cs" />
     <Compile Include="Stack\Form1.cs">
       <SubType>Form</SubType>
     </Compile>

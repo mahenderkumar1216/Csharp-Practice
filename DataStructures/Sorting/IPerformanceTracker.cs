@@ -49,7 +49,7 @@ namespace DataStructures.Sorting
             Interlocked.Exchange(ref _swaps, 0);
         }
 
-        protected int Comapare(T lhs, T rhs)
+        protected int Compare(T lhs, T rhs)
         {
             Interlocked.Increment(ref _comparisons);
             return lhs.CompareTo(rhs);
