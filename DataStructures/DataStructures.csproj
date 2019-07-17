@@ -98,6 +98,18 @@
     <Compile Include="Queue\UserControl1.xaml.cs">
       <DependentUpon>UserControl1.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Sets\Gender.cs" />
+    <Compile Include="Sets\Set.cs" />
+    <Compile Include="Sets\SetsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sets\SetsForm.Designer.cs">
+      <DependentUpon>SetsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sets\SetsUserControl.xaml.cs">
+      <DependentUpon>SetsUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sets\Student.cs" />
     <Compile Include="Sorting\BubbleSort.cs" />
     <Compile Include="Sorting\InsertionSort.cs" />
     <Compile Include="Sorting\IPerformanceTracker.cs" />
@@ -129,6 +141,9 @@
     <EmbeddedResource Include="Queue\QueueForm.resx">
       <DependentUpon>QueueForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Sets\SetsForm.resx">
+      <DependentUpon>SetsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Stack\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -143,6 +158,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Queue\UserControl1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Sets\SetsUserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

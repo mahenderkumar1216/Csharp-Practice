@@ -29,6 +29,8 @@ namespace DataStructures
 
             //Application.Run(new HashTable.HashTableForm());
 
+            Application.Run(new Sets.SetsForm());
+
             Sorting.BubbleSort<int> b = new Sorting.BubbleSort<int>();
             b.Sort(new int[] { 1, 3, 4, 7, 2, 9, 5, 6 });
             b.PrintSorted();
