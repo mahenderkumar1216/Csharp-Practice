@@ -53,6 +53,8 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AVL Tree\AVLTree.cs" />
+    <Compile Include="AVL Tree\AVLTreeNode.cs" />
     <Compile Include="BinaryTrees\BinaryTree.cs" />
     <Compile Include="BinaryTrees\BinaryTreeNode.cs" />
     <Compile Include="BinaryTrees\WordSorter.cs" />
@@ -127,6 +129,9 @@
     <Compile Include="Stack\StackArray.cs" />
     <Compile Include="Stack\StackUsingLinkedList.cs" />
     <Compile Include="Stack\Undo.cs" />
+    <Compile Include="StringSearch\IStringSearchAlgorithm.cs" />
+    <Compile Include="StringSearch\NaiveStringSearch.cs" />
+    <Compile Include="StringSearch\Tracker.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

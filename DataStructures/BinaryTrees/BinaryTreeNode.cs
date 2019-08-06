@@ -15,9 +15,9 @@ namespace DataStructures.BinaryTrees
 
         public TNode Value { get; private set; }
 
-        public BinaryTreeNode<TNode> Left { get; set; }
+        public BinaryTreeNode<TNode> Left { get;  set; }
 
-        public BinaryTreeNode<TNode> Right { get; set; }
+        public BinaryTreeNode<TNode> Right { get;  set; }
 
         /// <summary>
         /// Compares the current node to the provided value
