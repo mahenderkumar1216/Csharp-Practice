@@ -58,7 +58,7 @@ namespace DataStructures.StringSearch
             Interlocked.Increment(ref _swaps);
         }
 
-        protected int CompareTo(T lhs, T rhs)
+        protected int Compare(T lhs, T rhs)
         {
             Interlocked.Increment(ref _comparisons);
 

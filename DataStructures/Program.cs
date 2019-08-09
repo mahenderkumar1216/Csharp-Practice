@@ -1,3 +1,4 @@
+using DataStructures.StringSearch;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,7 +30,7 @@ namespace DataStructures
 
             //Application.Run(new HashTable.HashTableForm());
 
-            Application.Run(new Sets.SetsForm());
+           // Application.Run(new Sets.SetsForm());
 
             Sorting.BubbleSort<int> b = new Sorting.BubbleSort<int>();
             b.Sort(new int[] { 1, 3, 4, 7, 2, 9, 5, 6 });
@@ -68,6 +69,16 @@ namespace DataStructures
             Console.WriteLine();
             Console.WriteLine("Number of Comparisions Quick Sort:" + quickSort.Comparisons);
             Console.WriteLine("Number of Swaps Quick Sort: " + quickSort.Swaps);
+
+            StringSearch.NaiveStringSearch searchNaive = new StringSearch.NaiveStringSearch();
+            StringSearch.BoyerMoore searchBoyerMoore = new StringSearch.BoyerMoore();
+            string toFind = "he";
+            string toSearch = "The brown cat ran through the kitchen";
+            foreach (ISearchMatch match in searchNaive.Search(toFind, toSearch))
+            {
+                Console.WriteLine("Match found at: {0}", match.Start);
+            }
+            searchBoyerMoore.Search("TRUTH", "WE HOLD THESE TRUTHS TO BE SELF-EVIDENT");
         }
     }
 }

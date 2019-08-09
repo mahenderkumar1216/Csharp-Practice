@@ -129,8 +129,11 @@
     <Compile Include="Stack\StackArray.cs" />
     <Compile Include="Stack\StackUsingLinkedList.cs" />
     <Compile Include="Stack\Undo.cs" />
+    <Compile Include="StringSearch\BadMatchTable.cs" />
+    <Compile Include="StringSearch\BoyerMoore.cs" />
     <Compile Include="StringSearch\IStringSearchAlgorithm.cs" />
     <Compile Include="StringSearch\NaiveStringSearch.cs" />
+    <Compile Include="StringSearch\StringSearchMatch.cs" />
     <Compile Include="StringSearch\Tracker.cs" />
   </ItemGroup>
   <ItemGroup>
