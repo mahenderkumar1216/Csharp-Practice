@@ -30,55 +30,57 @@ namespace DataStructures
 
             //Application.Run(new HashTable.HashTableForm());
 
-           // Application.Run(new Sets.SetsForm());
+            // Application.Run(new Sets.SetsForm());
 
-            Sorting.BubbleSort<int> b = new Sorting.BubbleSort<int>();
-            b.Sort(new int[] { 1, 3, 4, 7, 2, 9, 5, 6 });
-            b.PrintSorted();
-            Console.WriteLine();
-            Console.WriteLine("Number of Comparisions for Bubble Sort:" + b.Comparisons);
-            Console.WriteLine("Number of Swaps Bubble Sort: " + b.Swaps);
-            Console.WriteLine();
+            //Sorting.BubbleSort<int> b = new Sorting.BubbleSort<int>();
+            //b.Sort(new int[] { 1, 3, 4, 7, 2, 9, 5, 6 });
+            //b.PrintSorted();
+            //Console.WriteLine();
+            //Console.WriteLine("Number of Comparisions for Bubble Sort:" + b.Comparisons);
+            //Console.WriteLine("Number of Swaps Bubble Sort: " + b.Swaps);
+            //Console.WriteLine();
 
-            Sorting.InsertionSort<int> insertionSort = new Sorting.InsertionSort<int>();
-            insertionSort.Sort(new int[] { 1, 3, 4, 7, 2, 9, 5, 6 });
-            insertionSort.PrintSorted();
-            Console.WriteLine();
-            Console.WriteLine("Number of Comparisions Insertion Sort:" + insertionSort.Comparisons);
-            Console.WriteLine("Number of Swaps Insertion Sort: " + insertionSort.Swaps);
-
-
-            Sorting.SelectionSort<int> selectionSort = new Sorting.SelectionSort<int>();
-            selectionSort.Sort(new int[] { 1, 3, 4, 7, 2, 9, 5, 6 });
-            selectionSort.PrintSorted();
-            Console.WriteLine();
-            Console.WriteLine("Number of Comparisions Selection Sort:" + selectionSort.Comparisons);
-            Console.WriteLine("Number of Swaps Selection Sort: " + selectionSort.Swaps);
-
-            Sorting.MergeSort<int> mergeSort = new Sorting.MergeSort<int>();
-            mergeSort.Sort(new int[] { 1, 3, 4, 7, 2, 9, 5, 6 });
-            mergeSort.PrintSorted();
-            Console.WriteLine();
-            Console.WriteLine("Number of Comparisions Merge Sort:" + mergeSort.Comparisons);
-            Console.WriteLine("Number of Swaps Merge Sort: " + mergeSort.Swaps);
+            //Sorting.InsertionSort<int> insertionSort = new Sorting.InsertionSort<int>();
+            //insertionSort.Sort(new int[] { 1, 3, 4, 7, 2, 9, 5, 6 });
+            //insertionSort.PrintSorted();
+            //Console.WriteLine();
+            //Console.WriteLine("Number of Comparisions Insertion Sort:" + insertionSort.Comparisons);
+            //Console.WriteLine("Number of Swaps Insertion Sort: " + insertionSort.Swaps);
 
 
-            Sorting.QuickSort<int> quickSort = new Sorting.QuickSort<int>();
-            quickSort.Sort(new int[] { 1, 3, 4, 7, 2, 9, 5, 6 });
-            quickSort.PrintSorted();
-            Console.WriteLine();
-            Console.WriteLine("Number of Comparisions Quick Sort:" + quickSort.Comparisons);
-            Console.WriteLine("Number of Swaps Quick Sort: " + quickSort.Swaps);
+            //Sorting.SelectionSort<int> selectionSort = new Sorting.SelectionSort<int>();
+            //selectionSort.Sort(new int[] { 1, 3, 4, 7, 2, 9, 5, 6 });
+            //selectionSort.PrintSorted();
+            //Console.WriteLine();
+            //Console.WriteLine("Number of Comparisions Selection Sort:" + selectionSort.Comparisons);
+            //Console.WriteLine("Number of Swaps Selection Sort: " + selectionSort.Swaps);
 
-            StringSearch.NaiveStringSearch searchNaive = new StringSearch.NaiveStringSearch();
-            StringSearch.BoyerMoore searchBoyerMoore = new StringSearch.BoyerMoore();
-            string toFind = "he";
-            string toSearch = "The brown cat ran through the kitchen";
-            foreach (ISearchMatch match in searchNaive.Search(toFind, toSearch))
-            {
-                Console.WriteLine("Match found at: {0}", match.Start);
-            }
-            searchBoyerMoore.Search("TRUTH", "WE HOLD THESE TRUTHS TO BE SELF-EVIDENT");
+            //Sorting.MergeSort<int> mergeSort = new Sorting.MergeSort<int>();
+            //mergeSort.Sort(new int[] { 1, 3, 4, 7, 2, 9, 5, 6 });
+            //mergeSort.PrintSorted();
+            //Console.WriteLine();
+            //Console.WriteLine("Number of Comparisions Merge Sort:" + mergeSort.Comparisons);
+            //Console.WriteLine("Number of Swaps Merge Sort: " + mergeSort.Swaps);
+
+
+            //Sorting.QuickSort<int> quickSort = new Sorting.QuickSort<int>();
+            //quickSort.Sort(new int[] { 1, 3, 4, 7, 2, 9, 5, 6 });
+            //quickSort.PrintSorted();
+            //Console.WriteLine();
+            //Console.WriteLine("Number of Comparisions Quick Sort:" + quickSort.Comparisons);
+            //Console.WriteLine("Number of Swaps Quick Sort: " + quickSort.Swaps);
+
+            //StringSearch.NaiveStringSearch searchNaive = new StringSearch.NaiveStringSearch();
+            //StringSearch.BoyerMoore searchBoyerMoore = new StringSearch.BoyerMoore();
+            //string toFind = "he";
+            //string toSearch = "The brown cat ran through the kitchen";
+            //foreach (ISearchMatch match in searchBoyerMoore.Search(toFind, toSearch))
+            //{
+            //    Console.WriteLine("Match found at: {0}", match.Start);
+            //}
+            //searchBoyerMoore.Search("TRUTH", "WE HOLD THESE TRUTHS TO BE SELF-EVIDENT");
+
+            Application.Run(new StringSearch.StringSearchForm());
         }
     }
 }

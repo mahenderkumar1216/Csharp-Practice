@@ -129,11 +129,21 @@
     <Compile Include="Stack\StackArray.cs" />
     <Compile Include="Stack\StackUsingLinkedList.cs" />
     <Compile Include="Stack\Undo.cs" />
+    <Compile Include="StringSearch\AlgorithmSelector.cs" />
     <Compile Include="StringSearch\BadMatchTable.cs" />
     <Compile Include="StringSearch\BoyerMoore.cs" />
     <Compile Include="StringSearch\IStringSearchAlgorithm.cs" />
     <Compile Include="StringSearch\NaiveStringSearch.cs" />
+    <Compile Include="StringSearch\StringSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StringSearch\StringSearchForm.Designer.cs">
+      <DependentUpon>StringSearchForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="StringSearch\StringSearchMatch.cs" />
+    <Compile Include="StringSearch\StringSearchUserControl.xaml.cs">
+      <DependentUpon>StringSearchUserControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="StringSearch\Tracker.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -155,6 +165,9 @@
     <EmbeddedResource Include="Stack\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="StringSearch\StringSearchForm.resx">
+      <DependentUpon>StringSearchForm.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Page Include="HashTable\HashTableUserControl.xaml">
@@ -170,6 +183,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Sets\SetsUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StringSearch\StringSearchUserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

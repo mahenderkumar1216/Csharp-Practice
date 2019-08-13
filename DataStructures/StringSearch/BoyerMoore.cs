@@ -21,10 +21,24 @@ namespace DataStructures.StringSearch
                 int currentStartIndex = 0;
                 while (currentStartIndex <= toSearch.Length - toFind.Length)
                 {
-                    
+                    int charactersLeftToMatch = toFind.Length - 1;
+
+                    while (charactersLeftToMatch >= 0 && Compare(toFind[charactersLeftToMatch], toSearch[currentStartIndex + charactersLeftToMatch]) == 0)
+                    {
+                        charactersLeftToMatch--;
+                    }
+
+                    if (charactersLeftToMatch < 0)
+                    {
+                        yield return new StringSearchMatch(currentStartIndex, toFind.Length);
+                        currentStartIndex += toFind.Length;
+                    }
+                    else
+                    {
+                        currentStartIndex += badMatchTable[toSearch[currentStartIndex + toFind.Length - 1]];
+                    }
                 }
             }
-            return null;
         }
     }
 }
