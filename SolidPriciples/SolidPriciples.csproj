@@ -44,7 +44,21 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter">
+      <HintPath>..\SolidPriciples.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices">
+      <HintPath>..\SolidPriciples.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface">
+      <HintPath>..\SolidPriciples.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework">
+      <HintPath>..\SolidPriciples.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions">
+      <HintPath>..\SolidPriciples.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -72,6 +86,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CartTotalShouldReturn.cs" />
+    <Compile Include="InterfaceSegregation\Configuration1\AboutPage.cs" />
+    <Compile Include="InterfaceSegregation\Configuration1\AboutPageShould.cs" />
+    <Compile Include="InterfaceSegregation\Configuration1\ConfigurationSettings.cs" />
+    <Compile Include="InterfaceSegregation\Configuration1\IConfigurationSettings.cs" />
+    <Compile Include="InterfaceSegregation\Configuration2\AboutPage.cs" />
+    <Compile Include="InterfaceSegregation\Configuration3\AboutPage.cs" />
+    <Compile Include="InterfaceSegregation\Configuration3\AboutPageShould.cs" />
     <Compile Include="Model\Cart.cs" />
     <Compile Include="Model\Order.cs" />
     <Compile Include="Model\OrderItem.cs" />
@@ -90,7 +111,11 @@
     <Compile Include="Services\PaymentGateway.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="InterfaceSegregation\Web.config" />
+    <Content Include="ISP.vsmdi" />
+    <Content Include="Local.testsettings" />
     <None Include="packages.config" />
+    <Content Include="TraceAndTestImpact.testsettings" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
