@@ -1,15 +1,18 @@
-﻿using System;
+﻿using SolidPriciples.DependecyInjection.Interfaces;
+using SolidPriciples.DependecyInjection.Services;
+using SolidPriciples.Services;
+using SolidPriciples.Refactored;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+
 
 namespace SolidPriciples.Model
 {
     public abstract class OrderSRP
     {
-        protected readonly Cart _cart;
+        protected readonly Refactored.Cart _cart;
 
-        protected OrderSRP(Cart cart)
+        protected OrderSRP(Refactored.Cart cart)
         {
             _cart = cart;
         }
@@ -18,54 +21,14 @@ namespace SolidPriciples.Model
         {
 
         }
-    }
-
-    public interface IPaymentProcessor
-    {
-        void ProcessCreditCard(PaymentDetails paymentDetails, decimal amount);
-    }
-
-    public interface IReservationService
-    {
-        void ReserveInventory(IEnumerable<OrderItem> items);
-    }
-
-    internal interface INotificationService
-    {
-        void NotifyCustomerOrderCreated(Cart cart);
-    }
-
-    public class PaymentProcessor : IPaymentProcessor
-    {
-        public void ProcessCreditCard(PaymentDetails paymentDetails, decimal amount)
-        {
-            throw new NotImplementedException();
-        }
-    }
-
-    public class ReservationService : IReservationService
-    {
-        public void ReserveInventory(IEnumerable<OrderItem> items)
-        {
-            throw new NotImplementedException();
-        }
-    }
-
-    public class NotificationService : INotificationService
-    {
-        public void NotifyCustomerOrderCreated(Cart cart)
-        {
-            throw new NotImplementedException();
-        }
-    }
-
+    }   
     public class OnlineOrder:OrderSRP
     {
         private readonly INotificationService _notificationService;
         private readonly PaymentDetails _paymentDeatils;
         private readonly IPaymentProcessor _paymentProcessor;
         private readonly IReservationService _reservationService;
-        public OnlineOrder(Cart cart, PaymentDetails paymentDetails):base(cart)
+        public OnlineOrder(Refactored.Cart cart, PaymentDetails paymentDetails):base(cart)
         {
             _notificationService = new NotificationService();
             _paymentDeatils = paymentDetails;
@@ -87,7 +50,7 @@ namespace SolidPriciples.Model
 
         private readonly PaymentDetails _paymentDetails;
         private readonly IPaymentProcessor _paymentProcessor;
-        public PosCreditOrder(Cart cart, PaymentDetails paymentDetails):base(cart)
+        public PosCreditOrder(Refactored.Cart cart, PaymentDetails paymentDetails):base(cart)
         {
             _paymentDetails = paymentDetails;
             _paymentProcessor = new PaymentProcessor();
@@ -101,7 +64,7 @@ namespace SolidPriciples.Model
     }
     public class PoSCashOrder : OrderSRP
     {
-        public PoSCashOrder(Cart cart)
+        public PoSCashOrder(Refactored.Cart cart)
             : base(cart)
         {
         }

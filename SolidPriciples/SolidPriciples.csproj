@@ -85,7 +85,21 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CartTotalShouldReturn.cs" />
+    <Compile Include="DependecyInjection\Tests\CartTotalShouldReturn.cs" />
+    <Compile Include="DependecyInjection\Interfaces\INotificationService.cs" />
+    <Compile Include="DependecyInjection\Interfaces\IPaymentProcessor.cs" />
+    <Compile Include="DependecyInjection\Interfaces\IReservationService.cs" />
+    <Compile Include="DependecyInjection\LosselyCoupled\CashOrder.cs" />
+    <Compile Include="DependecyInjection\LosselyCoupled\OnlineOrder.cs" />
+    <Compile Include="DependecyInjection\LosselyCoupled\OrderAbstract.cs" />
+    <Compile Include="DependecyInjection\LosselyCoupled\PosCreditOrder.cs" />
+    <Compile Include="DependecyInjection\Services\NotificationService.cs" />
+    <Compile Include="DependecyInjection\Services\ReservationService.cs" />
+    <Compile Include="DependecyInjection\Tests\FakeNotificationService.cs" />
+    <Compile Include="DependecyInjection\Tests\FakePaymentProcessor.cs" />
+    <Compile Include="DependecyInjection\Tests\FakeReservationService.cs" />
+    <Compile Include="DependecyInjection\Tests\OrderCheckoutShouldTightCoupling.cs" />
+    <Compile Include="DependecyInjection\Tests\public class OrderCheckoutShouldLooseCoupling.cs" />
     <Compile Include="InterfaceSegregation\Configuration1\AboutPage.cs" />
     <Compile Include="InterfaceSegregation\Configuration1\AboutPageShould.cs" />
     <Compile Include="InterfaceSegregation\Configuration1\ConfigurationSettings.cs" />
@@ -93,22 +107,24 @@
     <Compile Include="InterfaceSegregation\Configuration2\AboutPage.cs" />
     <Compile Include="InterfaceSegregation\Configuration3\AboutPage.cs" />
     <Compile Include="InterfaceSegregation\Configuration3\AboutPageShould.cs" />
-    <Compile Include="Model\Cart.cs" />
-    <Compile Include="Model\Order.cs" />
-    <Compile Include="Model\OrderItem.cs" />
-    <Compile Include="Model\OrderSRP.cs" />
-    <Compile Include="Model\PaymentDetails.cs" />
+    <Compile Include="DependecyInjection\LosselyCoupled\Order.cs" />
+    <Compile Include="DependecyInjection\TightCoupled\Cart.cs" />
+    <Compile Include="DependecyInjection\TightCoupled\Order.cs" />
+    <Compile Include="DependecyInjection\Refactored\OrderItem.cs" />
+    <Compile Include="DependecyInjection\TightCoupled\OrderSRP.cs" />
+    <Compile Include="DependecyInjection\Interfaces\PaymentDetails.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Refactored\Buy4GetOneFree.cs" />
-    <Compile Include="Refactored\Cart.cs" />
-    <Compile Include="Refactored\EachPriceRule.cs" />
-    <Compile Include="Refactored\IPriceRule.cs" />
-    <Compile Include="Refactored\IPricingCalculator.cs" />
-    <Compile Include="Refactored\PerGramPriceRule.cs" />
-    <Compile Include="Refactored\PricingCalculator.cs" />
-    <Compile Include="Refactored\SpecialPriceRule.cs" />
-    <Compile Include="Services\InventorySystem.cs" />
-    <Compile Include="Services\PaymentGateway.cs" />
+    <Compile Include="DependecyInjection\Refactored\Buy4GetOneFree.cs" />
+    <Compile Include="DependecyInjection\Refactored\Cart.cs" />
+    <Compile Include="DependecyInjection\Refactored\EachPriceRule.cs" />
+    <Compile Include="DependecyInjection\Interfaces\IPriceRule.cs" />
+    <Compile Include="DependecyInjection\Interfaces\IPricingCalculator.cs" />
+    <Compile Include="DependecyInjection\Refactored\PerGramPriceRule.cs" />
+    <Compile Include="DependecyInjection\Refactored\PricingCalculator.cs" />
+    <Compile Include="DependecyInjection\Refactored\SpecialPriceRule.cs" />
+    <Compile Include="DependecyInjection\Services\InventorySystem.cs" />
+    <Compile Include="DependecyInjection\Services\PaymentGateway.cs" />
+    <Compile Include="DependecyInjection\Services\PaymentProcessor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="InterfaceSegregation\Web.config" />

@@ -9,6 +9,7 @@ namespace SolidPriciples.Model
 {
     public class Order
     {
+        //Tightly Coupled
         public void Checkout(Cart cart, PaymentDetails paymentDetails, bool notifyCustomer)
         {
             if (paymentDetails.PaymentMethod == PaymentMethod.CreditCard)

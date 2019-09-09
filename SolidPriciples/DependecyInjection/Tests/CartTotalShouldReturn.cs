@@ -4,8 +4,9 @@ using System.Linq;
 using System.Web;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SolidPriciples.Model;
+using SolidPriciples.Refactored;
 
-namespace SolidPriciples
+namespace SolidPriciples.Tests
 {
     [TestClass]
     public class CartTotalShouldReturn
